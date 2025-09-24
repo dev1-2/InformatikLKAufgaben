@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Eingabeleser
+comment0.text=\n\ ein\ Eingabeleser\ liest\ eingetippten\ Text\ von\ der\ Konsole.\n\ \n\ Class\ Eingabeleser\ reads\ typed\ text\ input\ from\ the\ standard\ text\ terminal.\ The\ text\n\ typed\ by\ a\ user\ is\ then\ chopped\ into\ words,\ and\ a\ set\ of\ words\ is\ provided.\n\ \n
+comment1.params=
+comment1.target=Eingabeleser()
+comment1.text=\n\ Erzeuge\ einen\ neuen\ Eingabeleser\ der\ Text\ von\ der\ Konsole\n\ einliest.\n
+comment2.params=
+comment2.target=java.lang.String\ gibEingabe()
+comment2.text=\n\ Lies\ eine\ Zeile\ von\ der\ Konsole\ und\ liefere\ sie\ als\ Ergebnis.\n\n\ @return\ \ Eine\ Textzeile,\ die\ vom\ Benutzer\ eingetippt\ wurde.\n
+comment3.params=
+comment3.target=java.lang.String\ eingabezeileEinlesen()
+comment3.text=\n\ Lies\ eine\ Eingabezeile\ und\ liefere\ sie\ als\ String-Ergebnis.\n\n\ @return\ \ Einen\ String,\ der\ die\ Eingabezeile\ enthaelt,\ oder\ \n\ \ \ \ \ \ \ \ \ \ \ einen\ leeren\ String\ im\ Falle\ eines\ Fehlers.\n
+numComments=4

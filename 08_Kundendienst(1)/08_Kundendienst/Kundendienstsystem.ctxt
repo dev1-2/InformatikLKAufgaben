@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Kundendienstsystem
+comment0.text=\n\ Diese\ Klasse\ implementiert\ ein\ System\ fuer\ einen\ technischen\n\ Kundendienst.\ Das\ System\ kommuniziert\ mit\ dem\ Benutzer\ ueber\ \n\ die\ Konsole.\n\ \n\ Diese\ Klasse\ benutzt\ ein\ Exemplar\ der\ Klasse\ Eingabeleser,\ \n\ um\ Eingaben\ vom\ Benutzer\ zu\ lesen,\ und\ ein\ Exemplar\ der\n\ Klasse\ Beantworter,\ um\ Antworten\ zu\ generieren.\n\ In\ einer\ Schleife\ werden\ Eingaben\ eingelesen\ und\ Antworten\n\ auf\ diese\ Eingaben\ generiert,\ bis\ der\ Benutzer\ das\ System\n\ verlaesst.\n\ \n
+comment1.params=
+comment1.target=Kundendienstsystem()
+comment1.text=\n\ Erzeuge\ ein\ Kundendienstsystem.\n
+comment2.params=
+comment2.target=void\ starten()
+comment2.text=\n\ Starte\ das\ System\ fuer\ den\ technischen\ Kundendienst.\n\ Es\ wird\ ein\ Begruessungstext\ ausgegeben\ und\ anschliessend\n\ eine\ Dialog\ mit\ dem\ Benutzer\ gefuehrt,\ bis\ der\ Benutzer\n\ den\ Dialog\ beendet.\n
+comment3.params=
+comment3.target=void\ willkommenstextAusgeben()
+comment3.text=\n\ Gib\ einen\ Willkommenstext\ auf\ der\ Konsole\ aus.\n
+comment4.params=
+comment4.target=void\ abschiedstextAusgeben()
+comment4.text=\n\ Gib\ einen\ Abschiedstext\ auf\ der\ Konsole\ aus.\n
+numComments=5
