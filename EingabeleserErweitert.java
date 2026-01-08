@@ -28,6 +28,8 @@ public class EingabeleserErweitert
         scanner = new Scanner(System.in);
     }
     
+    private String letzteEingabe; // Speichert die letzte Eingabe für spätere Abfrage
+    
     /**
      * Ursprüngliche Version: Liest eine Zeile von der Konsole ein.
      * 
@@ -37,6 +39,7 @@ public class EingabeleserErweitert
     {
         System.out.print("> ");
         String eingabezeile = scanner.nextLine().trim();
+        letzteEingabe = eingabezeile;
         return eingabezeile;
     }
     
@@ -49,10 +52,14 @@ public class EingabeleserErweitert
     public HashSet<String> gibEingabeAlsWoerter()
     {
         System.out.print("> ");
-        String eingabezeile = scanner.nextLine().trim().toLowerCase();
+        String eingabezeile = scanner.nextLine().trim();
+        letzteEingabe = eingabezeile; // Original speichern
+        
+        // Normalisierung für Verarbeitung
+        String normalisiert = eingabezeile.toLowerCase();
         
         // String an Leerzeichen trennen
-        String[] wortArray = eingabezeile.split(" ");
+        String[] wortArray = normalisiert.split(" ");
         
         // Wörter aus dem Array in das HashSet kopieren
         HashSet<String> woerter = new HashSet<>();
@@ -63,6 +70,16 @@ public class EingabeleserErweitert
         }
         
         return woerter;
+    }
+    
+    /**
+     * Gibt die zuletzt eingegebene Zeile zurück (vor Normalisierung).
+     * 
+     * @return Die letzte Eingabe des Benutzers im Originalformat
+     */
+    public String gibLetzteEingabe()
+    {
+        return letzteEingabe;
     }
     
     /**

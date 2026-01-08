@@ -49,9 +49,13 @@ public class KundendienstsystemVollstaendig
                 eingabe.contains("beenden")) {
                 fertig = true;
             } else {
+                // Frage/Eingabe anzeigen
+                System.out.println("Ihre Frage: " + leser.gibLetzteEingabe());
+                System.out.println();
+                
                 // Antwort basierend auf der Wortmenge generieren
                 String antwort = beantworter.generiereAntwort(eingabe);
-                System.out.println(antwort);
+                System.out.println("Antwort: " + antwort);
                 System.out.println();
             }
         }
@@ -74,16 +78,20 @@ public class KundendienstsystemVollstaendig
             String eingabe = leser.gibEingabe();
             
             // Eingabe normalisieren
-            eingabe = eingabe.trim().toLowerCase();
+            String normalisiert = eingabe.trim().toLowerCase();
             
             // Auf Beendigung prüfen
-            if (eingabe.startsWith("ade") || eingabe.equals("quit") || 
-                eingabe.equals("exit") || eingabe.equals("beenden")) {
+            if (normalisiert.startsWith("ade") || normalisiert.equals("quit") || 
+                normalisiert.equals("exit") || normalisiert.equals("beenden")) {
                 fertig = true;
             } else {
+                // Frage/Eingabe anzeigen
+                System.out.println("Ihre Frage: " + eingabe);
+                System.out.println();
+                
                 // Antwort basierend auf einzelnem String generieren
-                String antwort = beantworter.generiereAntwort(eingabe);
-                System.out.println(antwort);
+                String antwort = beantworter.generiereAntwort(normalisiert);
+                System.out.println("Antwort: " + antwort);
                 System.out.println();
             }
         }
@@ -186,6 +194,8 @@ public class KundendienstsystemVollstaendig
         
         for (String testEingabe : testEingaben) {
             System.out.println("> " + testEingabe);
+            System.out.println("Ihre Frage: " + testEingabe);
+            System.out.println();
             
             // Eingabe in Wörter zerlegen (simuliert)
             HashSet<String> woerter = new HashSet<>();
@@ -195,7 +205,7 @@ public class KundendienstsystemVollstaendig
             }
             
             String antwort = beantworter.generiereAntwort(woerter);
-            System.out.println(antwort);
+            System.out.println("Antwort: " + antwort);
             System.out.println();
             
             // Kurze Pause für bessere Lesbarkeit
