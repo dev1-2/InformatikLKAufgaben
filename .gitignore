@@ -1,0 +1,21 @@
+# Temporary files
+*.jpg
+*.tmp
+*.temp
+
+# Java compiled files
+*.class
+
+# BlueJ files
+*.ctxt
+*.bluej
+*.pkh
+*.pkg
+
+# IDE files
+.idea/
+.vscode/
+
+# Build directories
+build/
+target/
